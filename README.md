@@ -19,9 +19,9 @@ def d(s):
 return "".join(set(s))
 ```
 Semua kode diatas ini, jika saya ubah menjadi sebuah program dan menggunakan lambda. Maka akan menjadi seperti ini :<br/>
-![ss.png](screenshots/ss1.png)<br/><br/>
+![ss.png](Screenshots/ss1.png)<br/><br/>
 dengan program seperti ini, maka akan menghasilkan sebuah RUN, seperti :<br/>
-![ss.png](screenshots/ss2.png)<br/><br/>
+![ss.png](Screenshots/ss2.png)<br/><br/>
 Latihan sudah berhasil dilakukan, selanjutnya Saya akan langsung membuat sebuah praktikum.
 ## Praktikum
 Dalam praktikum ini, Saya diperintahkan untuk membuat sebuah program sederhana dengan mengaplikasikan fungsi. Program ini nantinya akan menampilkan daftar dari nilai mahasiswa, ketentuan program ini adalah :<br/>
@@ -31,7 +31,7 @@ Dalam praktikum ini, Saya diperintahkan untuk membuat sebuah program sederhana d
 • Fungsi **ubah(nama)** untuk mengubah data berdasarkan nama<br/>
 • Tambahkan juga flowchart dan penjelasan dari program ini.<br/>
 Beginilah jika dituangkan kedalam program :
-```commandline
+```
 from os import system
 nama_m = []
 nim_m = []
