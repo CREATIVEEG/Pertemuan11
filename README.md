@@ -1,5 +1,13 @@
 # Pertemuan 11
+| No.| DAFTAR ISI | FILE          | GOTO                        |
+|----|------------|---------------|-----------------------------|
+| 1. | Latihan    | Latihan1.py   | [Menuju Kesini](#latihan)   |
+| 2. | Praktikum  | Praktikum.py  | [Menuju Kesini](#praktikum) |
+| 3. | Flowchart  | Flowchart.png | [Menuju Kesini](#flowchart) |
+| 4. | Penutup    |               | [Menuju Kesini](#penutup)   |
+
 Hallo, berjumpa lagi dengan Saya Rhendy... Pada repository kali ini, saya akan menunaikan tugas dari pertemuan 11, yaitu tentang Fungsi. Seperti biasa, akan ada Latihan dan Praktikum beserta flowchart yang nanti Saya sertakan pada repository ini.
+
 ## Latihan
 Pada bagian Latihan ini, saya akan mengubah kode-kode dibawah ini menjadi sebuah fungsi, dengan menggunakan lambda.<br/>
 Kode nya adalah sebagai berikut :<br/>
@@ -31,8 +39,9 @@ Dalam praktikum ini, Saya diperintahkan untuk membuat sebuah program sederhana d
 • Fungsi **ubah(nama)** untuk mengubah data berdasarkan nama<br/>
 • Tambahkan juga flowchart dan penjelasan dari program ini.<br/>
 Beginilah jika dituangkan kedalam program :
+1. Pertama, kita membuat dictionary kosong, karena nantinya akan kita isi dengan input dari user.
 ```
-from os import system
+form os import system
 nama_m = []
 nim_m = []
 n_tugas = []
@@ -40,13 +49,16 @@ n_uts = []
 n_uas = []
 n_akhir = []
 
-
+```
+2. Setelah itu, buat judul dari programnya. Judul ini nantinya juga akan dipakai saat menampilkan data yang sudah direkam.
+```
 def judul():
     print('=================================')
     print('|     Daftar Nilai Mahasiswa     |')
     print('==================================')
-
-
+```
+3. Buat menu pilihan dengan menggunakan if else, nantinya kita akan diminta memilih menu apa yang akan kita akses.
+```
 def menu():
     system('cls')
     print('====================================')
@@ -73,8 +85,9 @@ def menu():
         input('Menu Tidak Ada')
 
         menu()
-
-
+```
+4. Membuat syntax untuk menambahkan data. Input data akan terjadi ketika kita memilih 1.
+```
 def tambah():
     system('cls')
     judul()
@@ -95,8 +108,9 @@ def tambah():
     print('Data berhasil ditambah\n'.center(40))
     input('Kembali ke menu [Enter]')
     menu()
-
-
+```
+5. Membuat syntax untuk menampilkan data yang sudah kita input tadi. Data akan ditampilkan jika kita memilih 2.
+```
 def tampilkan():
     system('cls')
     judul()
@@ -111,8 +125,9 @@ def tampilkan():
         print('-----------------------------')
     input('Kembali ke menu [Enter]')
     menu()
-
-
+```
+6. Membuat syntax untuk mengubah data. Data akan diubah saat kita memilih nomor 3. Nanti kita akan diminta memasukan lagi nomor urut, lalu ubah data dengan memasukkan data yang baru.
+```
 def ubah():
     y_ubah = input('Yakin ubah data? [B]   : ')
     if y_ubah == 'B' or y_ubah == 'b':
@@ -135,8 +150,9 @@ def ubah():
             n_uas[i] = uas_n
     input('Kembali ke menu [Enter]')
     menu()
-
-
+```
+7. Lalu, membuat syntax untuk menghapus data yang sudah ditambahkan tadi. Dengan memilih nomor 4, maka kita akan diminta memasukkan nomor urut dari data yang akan dihapus.
+```
 def hapus():
     system('cls')
     judul()
@@ -159,10 +175,38 @@ def hapus():
     print('Data Berhasil Di Hapus')
     input('Kembali ke menu [Enter]')
     menu()
-
-
+```
+8. Dan, yang terakhir membuat syntax sederhana, untuk mengakhiri program.
+```
 def keluar():
     system('cls')
 
 menu()
+```
+Program ini ketika di RUN, maka akan mendapat hasil seperti ini :<br/>
+1. Menu pilihan akan muncul saat pertama kali program di RUN.<br/>
+    ![ss.png](Screenshots/ss3.png)<br/><br/>
+2. Jika memilih 1, maka kita akan diminta untuk menambahkan data. Isi data sesuai dengan apa yang diperintahkan. Jika sudah, tekan ENTER untuk kembali ke menu pilihan.<br/>
+    ![ss.png](Screenshots/ss4.png)<br/><br/>
+3. Lalu pilih 2 untuk menampilkan data yang sudah kita tambah tadi. Semua data yang ditambahkan akan ditampilkan.<br/>
+    ![ss.png](Screenshots/ss5.png)<br/><br/>
+4. Untuk mengubah data yang sudah kita masukkan, pilih nomor 3. Nanti kita akan diminta untuk memasukkan data baru.<br/>
+    ![ss.png](Screenshots/ss6.png)<br/><br/>
+5. Untuk menghapus. Kita hanya perlu memilih nomor 4, dan masukkan nomor urut dari data untuk menghapus data tersebut.<br/>
+    ![ss.png](Screenshots/ss7.png)<br/><br/>
+6. Yang terakhir, pilih nomor 5. Ketika kita akan mengakhiri atau keluar program ini.<br/>
+    ![ss.png](Screenshots/ss8.png)<br/><br/>
+Nah, Jadi itulah penjelasan dan cara kerja dari program yang telah dibuat ini. Selanjutnya akan saya sertekan flowchart dari program ini.
+
+## Flowchart
+![ss.png](Flowchart/Flowchart.png)<br/><br/>
+
+## Penutup
+Sudah sampai lagi kita dipenghujung repository kali ini. Sekian dari tugas yang sudah saya kerjakan, seperti biasa Saya memohon maaf bila ada kesalahan atau kekurangan dalam pengetikkan reporsitory ini. Terimakasih bagi yang sudah membaca sampai akhir atau hanya sekedar mampir. Sekali lagi saya ucapkan terimakasih.<br/><br/>
+
+```
+Nama    : Rhendy Diki Nugraha
+NIM     : 312210150
+Kelas   : TI.22.A1
+Dosen   : Agung Nugroho, S.kom, M.kom
 ```
